@@ -149,6 +149,37 @@ h1{
 } 
 
 
+/* ---  SECCION PERFIL  --- */
+
+
+#perfil {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    min-width: 40vw;
+    border: 1px solid blue;
+    justify-content: center;
+    align-items: center;
+    color: var(--verde);
+}
+
+.h2-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+#perfil p {
+    text-align: justify;
+    margin: 40px 50px 50px 50px;
+    line-height: 1.5;
+    font-size: 25px;
+    width: 70vw;
+}
+
+
 /* ---  SECCION TECH  --- */
 
 
