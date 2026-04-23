@@ -5,18 +5,23 @@ html, body{
 }
 
 :root {
-  --verde: rgb(44, 89, 44);
-  --verde-secundario: rgb(79, 143, 79);
-  --fondo: rgb(238, 238, 227);
-  --detalle: rgb(220, 220, 170);
+    --verde: rgb(44, 89, 44);
+    --verde-secundario: rgb(79, 143, 79);
+    --verde-terciario: rgb(60, 120, 60);
+    --fondo: rgb(238, 238, 227);
+    --detalle: rgb(220, 220, 170);
 }
 
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--fondo)
+    background-color: var(--fondo);
 }
+
+
+/* ---  HEADER  --- */
+
 
 header {
     height: 120px;
@@ -30,7 +35,6 @@ header {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     padding: 12px;
     margin-bottom: 12px;
-
 }
 
 .logo_header{
@@ -49,6 +53,10 @@ h1{
     font-size: 30px;
 }
 
+
+/* ---  SECCION HERO  --- */
+
+
 .hero{
     display: flex;
     justify-content: center;
@@ -57,14 +65,14 @@ h1{
     margin-left: 300px;
     height: auto;
     margin-bottom: 100px;
-    margin-top: 50px;
+    margin-top: 65px;
 }
 
 .foto{
     border-radius: 30%;
     height: 430px;
     margin-right: 60px;
-    box-shadow: 0 3px 10px var(--verde);
+    box-shadow: 0 2px 10px var(--verde);
 }
 
 .info{
@@ -96,7 +104,7 @@ h1{
   width: 200px;
   height: 100px;
   border-radius: 50%;
-  background: var(--verde-secundario);
+  background: var(--verde);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,10 +115,9 @@ h1{
 
 .hero-links a:hover{
     background: var(--detalle);
-    color: var(--verde-secundario);
+    color: var(--verde-terciario);
     transform: translateY(-4px) scale(1.3);
 }
-
 
 .icono-link { 
     display: flex; 
@@ -138,58 +145,158 @@ h1{
 .icono-link:hover span {
     max-width: 120px; 
     opacity: 1; 
-    color: var(--verde-secundario);
+    color: var(--verde-terciario);
 } 
 
 
-#tech {
+/* ---  SECCION PERFIL  --- */
+
+/*
+#perfil {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 50px;
-    min-height: 40vh;
-    border: 1px solid red;
-    justify-content: start;
-    align-items: start;
-    padding-left: 25px;
+    min-width: 40vw;
+    justify-content: center;
+    align-items: center;
     color: var(--verde);
 }
 
-.div-tech {
+.h2-perfil {
     display: flex;
     flex-direction: column;
-    min-height: 30vh;
-    width: 50vw;
-    border: 5px solid var(--verde);
     justify-content: center;
     align-items: center;
-    margin-left: 20vw;
-    background-color: var(--verde-secundario);
-    border-radius: 12px;
+    font-size: 55px;
 }
 
+#perfil p {
+    text-align: justify;
+    margin: 40px 50px 50px 50px;
+    line-height: 1.5;
+    font-size: 25px;
+    width: 70vw;
+}
+*/
+
+#perfil {
+    min-height: 80vh; /* ocupa gran parte de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+/* contenedor principal */
+.perfil {
+    max-width: 900px;
+    text-align: center;
+    padding: 60px 50px;
+    border-radius: 25px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(44, 89, 44, 0.15),
+        rgba(44, 89, 44, 0.05));
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+}
+
+.h2-perfil {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: var(--verde);
+    position: relative;
+}
+
+.h2-perfil::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: var(--verde);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    border-radius: 2px;
+}
+
+#perfil p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: var(--verde);
+    margin-top: 30px;
+}
+
+
+/* ---  SECCION TECH  --- */
+
+
+#tech {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 150px;
+}
+
+#tech > div {
+    flex: 1;
+    max-width: 500px;
+    background: rgba(44, 89, 44, 0.08);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    backdrop-filter: blur(6px);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+#tech > div:hover {
+    transform: translateY(-8px);
+}
+
+.h2-tech {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--verde);
+    position: relative;
+}
+
+.h2-tech::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: var(--verde);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
 
 .img-tech {
-    height: 25vh;
-    width: 50vw;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
- .foto-tech {
-    border-radius: 25%;
-    width: 200px;
-    height: 200px;
+.foto-tech {
+    width: 90px;
+    height: 90px;
     object-fit: contain;
-    padding-bottom: 40px;
- }
-
-.JS {
-    height: 203px;
+    transition: all 0.3s ease;
+    filter: grayscale(30%) brightness(0.95);
 }
 
+.foto-tech:hover {
+    transform: translateY(-8px) scale(1.1);
+    filter: grayscale(0%) brightness(1.1);
+}
+
+
+
+/* ---  MAIN PROYECTOS  --- */
 
 
 #proyectos {
@@ -205,7 +312,7 @@ h1{
     grid-template-columns: repeat(3, 450px);
     grid-template-rows: repeat(2, 250px);
     gap: 50px;
-    background-color: var(--verde-secundario);
+    background-color: var(--detalle);
     color: var(--detalle);
 }
 
@@ -221,6 +328,7 @@ h1{
     }
 
 .py:hover {
+      background: var(--verde);
       transform: scale(1.1);
 }
 
@@ -242,7 +350,6 @@ h1{
     color: var(--detalle);
 }
 
-
 .py-links {
     display: flex;
     justify-content: space-around;
@@ -256,7 +363,7 @@ h1{
 }
 
 
-
+/* ---  SECCION CONTACTO  --- */
 
 
 #contacto {
@@ -276,14 +383,13 @@ h1{
     flex-direction: column;
     min-height: 30vh;
     width: 50vw;
-    border: 5px solid var(--verde);
+    border: 5px solid var(--detalle);
     justify-content: center;
     align-items: center;
     margin-left: 20vw;
-    background-color: var(--verde-secundario);
+    background-color: var(--verde);
     border-radius: 12px;
 }
-
 
 .img-contacto {
     height: 25vh;
@@ -294,7 +400,6 @@ h1{
     align-items: center;
     gap: 50px;
 }
-
 
  .foto-contacto {
     border-radius: 25%;
@@ -309,8 +414,6 @@ h1{
     transform: scale(1.1);
  }
 
-
-
 .linkedIn {
     width: 160px;
     height: 160px;
@@ -318,13 +421,17 @@ h1{
 }
 
 
+/* ---  FOOTER  --- */
+
 
 footer{
-    background-color: var(--verde);
-    color: var(--fondo);
+    background-color: black;
+    color: white;
     width: 100%;
     height: 80px;
     align-content: center;
     text-align: center;
     margin-top: auto;
 }
+
+
