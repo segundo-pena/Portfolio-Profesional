@@ -6,10 +6,11 @@
     <title>Portfolio - Segundo Pena</title>
     <link rel="stylesheet" href="../CSS/portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@400;600;700&display=swap">
 </head>
 <body>
     <header>
-        <img class="logo_header" src="../IMG/Logo_Portfolio_3.png">
+        <img class="logo_header" src="../IMG/Logo_Portfolio.png">
         <section class="tit_header">
             <h1>Segundo Pena</h1>
             <h2 id="h2-header">Desarrollador Frontend</h2>
@@ -19,15 +20,11 @@
             <img class="foto" src="../IMG/Foto_LinkedIn.jpeg">
             <div class="info">
                 <h2 id="h2-info">Construyendo el futuro, una línea de código a la vez.</h2>
-                <p id="p-info">Bienvenidos. Soy desarrollador frontend en formación, enfocado en crear interfaces web modernas, funcionales y centradas en la experiencia del usuario.</p>
+                <p class="p-info">Bienvenidos. Soy desarrollador frontend en formación, enfocado en crear interfaces web modernas, funcionales y centradas en la experiencia del usuario.</p>
                 <nav class="hero-links">
                     <a href="#perfil" class="icono-link">
                         <i class="fa-solid fa-user"></i>
                         <span>Perfil</span>
-                    </a>
-                    <a href="#tech" class="icono-link">
-                        <i class="fa-solid fa-computer"></i>
-                        <span>Tech</span>
                     </a>
                     <a href="#proyectos" class="icono-link">
                         <i class="fa-solid fa-folder"></i>
@@ -44,24 +41,35 @@
             <div class="perfil">
                 <h2 class="h2-perfil">¿Quien soy?</h2>
                 <p>Desarrollador Frontend trainee con interés en la creación de interfaces web modernas, accesibles y centradas en la experiencia del usuario. Trabajo principalmente con HTML, CSS y JavaScript, aplicando buenas prácticas para construir sitios web responsivos, claros y funcionales. Me encuentro en constante aprendizaje, mejorando mis habilidades y explorando nuevas herramientas del ecosistema frontend para seguir creciendo como desarrollador. Actualmente estoy en búsqueda de mi primera oportunidad profesional como desarrollador frontend, donde pueda aportar valor, seguir aprendiendo y formar parte de un equipo de trabajo.
-                Estoy disponible para nuevos proyectos, colaboraciones y desafíos que me permitan seguir desarrollándome en el mundo del desarrollo web</p>
+                Estoy disponible para nuevos proyectos, colaboraciones y desafíos que me permitan seguir desarrollándome en el mundo del desarrollo web.</p>
             </div>
-        </section>
-        <br>
-        <section id="tech">
-            <h2 id="h2-tech">Tecnologias</h2>   
-            <div class="div-tech">
+            <section id="tech">
+            <div>
+                <h2 class="h2-tech">Tecnologías con las que trabajo</h2>
+                <div class="div-tech">
                 <div class="img-tech">
                     <img class="foto-tech" src="../IMG/Logo_Html.jpg">
                     <img class="foto-tech" src="../IMG/Logo_CSS.png">
-                    <img class="foto-tech JS" src="../IMG/Logo_JS_7.png">
+                    <img class="foto-tech JS" src="../IMG/Logo_JS.png">
+                </div>
                 </div>
             </div>
+            <div>
+                <h2 class="h2-tech">Tecnologías en aprendizaje</h2>
+                <div class="div-tech">
+                <div class="img-tech">
+                    <img class="foto-tech" src="../IMG/Logo_Vue.png">
+                    <img class="foto-tech React" src="../IMG/Logo_React.png">
+                    <img class="foto-tech" src="../IMG/Logo_Node.png">
+                </div>
+                </div>
+            </div>
+        </section>
         </section>
         <main id="proyectos">
             <div class="grid-proyectos">
                 <div class="py">
-                    <img src="img/proyecto1.png" alt="Proyecto 1">
+                    <img>
                     <h3>Portfolio Web</h3>
                     <p>Sitio personal hecho con HTML, CSS y JS.</p>
                     <div class="py-links">
@@ -72,28 +80,33 @@
                 <div class="py">Proyecto 2</div>
                 <div class="py">Proyecto 3</div>
                 <div class="py">Proyecto 4</div>
+                <div class="py">Proyecto 5</div>
+                <div class="py">Proyecto 6</div>
             </div>
         </main>
         <br>
         <section id="contacto"> 
-             <h2 id="h2-contacto">Contacto</h2>    
             <div class="div-contacto">
+                <h2 class="h2-contacto">Contacto </h2>
+                <p>Si te interesa mi perfil o querés trabajar conmigo, no dudes en contactarme. Estoy abierto a oportunidades laborales, proyectos y colaboraciones.</p>
                 <div class="img-contacto">
                     <a href="https://wa.me/5493584405202" target="_blank" rel="noopener noreferrer">
-                         <img class="foto-contacto" src="../IMG/Logo_wpp.webp">
+                         <img class="foto-contacto" src="../IMG/Logo_wpp.webp" alt="WhatsApp">
                     </a>
                     <a href="//github.com/segundo-pena" target="_blank" rel="noopener noreferrer">
-                        <img class="foto-contacto" src="../IMG/Logo_GitHub1.png">
+                        <img class="foto-contacto" src="../IMG/Logo_GitHub.png" alt="GitHub">
                     </a>
                     <a href="https://www.linkedin.com/in/segundo-pena-55a977380/" target="_blank" rel="noopener noreferrer">
-                        <img class="foto-contacto linkedIn" src="../IMG/Logo_LinkedIn1.png">
+                        <img class="foto-contacto linkedIn" src="../IMG/Logo_LinkedIn.png" alt="LinkedIn">
                     </a>   
+                    <a href="https://mail.google.com/mail/?view=cm&to=segupena92@gmail.com" target="_blank">
+                        <img class="foto-contacto mail" src="../IMG/Logo_mail.png" alt="Email">
+                    </a>
                 </div>
             </div>
         </section>
-
     <footer>
-        <p>By Segundo Pena - Argentina, 2026</p>
+        <p class="p-footer">© 2026 Segundo Pena - Todos los derechos reservados.</p>
     </footer>
     <script src="../JS/portfolio.js"></script>
 </body>
